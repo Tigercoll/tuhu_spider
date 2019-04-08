@@ -15,7 +15,7 @@
 
 ​	其实爬虫主要就是分析网页,查看html 结构
 
-我们进入主页:<https://www.tuhu.cn/>   既然我们要找的是商品,我点开首页,轮胎,查看所有轮胎![](D:\my_picturelib\tuhu_spider\1.png)
+我们进入主页:<https://www.tuhu.cn/>   既然我们要找的是商品,我点开首页,轮胎,查看所有轮胎![](<https://github.com/Tigercoll/my_picturelib/raw/master/tuhu_spider/1.png>)
 
 一开始以为要选车型才能展示 所有轮胎,是我想多了.恩3227也商品 应该是所有关于轮胎的商品了.找到了商品页,我们就F12,分析网页结构,接下来就没什么难度了,可以用beautifulsoup,xpath,re 解析html.
 
@@ -27,7 +27,7 @@
 
 观察发现AP-TH-CZSHZJ 应该是商品的ID,pageNumber=2 是页数,不过说来也奇怪3W 多条的评论,居然只能显示10页,还是很多类似商品公用一个评论的 ,为此我还特意问了他们客服.
 
-![](D:\my_picturelib\tuhu_spider\2.png)
+![](<https://github.com/Tigercoll/my_picturelib/raw/master/tuhu_spider/2.png>)
 
 商品ID 我们可以在展示页搜索到,然后用xpath匹配就可以了.
 
@@ -193,6 +193,8 @@ def is_null(an_list):
 ```
 
 其他商品页就跟轮胎的类似,这里不再赘述,只是换一个xpath而已.
+
+项目地址:<https://github.com/Tigercoll/tuhu_spider>欢迎沟通指教
 
 <font color='red'>免责声明:仅用于个人学习、研究或欣赏。我们不保证内容的正确性。通过使用本站内容随之而来的风险与本站无关,转载请注明出处.</font>
 
